@@ -20,7 +20,7 @@ import javafx.scene.text.FontWeight;
 import javafx.geometry.Pos;
 
 public class Main extends Application {
-    private static final String API_KEY = "";
+    private static String API_KEY = System.getenv("API_KEY");
     private static final String API_URL = "https://api.openweathermap.org/data/2.5/weather?q=%s&units=%s&appid=%s";
 
     private Label temperatureLabel, humidityLabel, windSpeedLabel, conditionLabel;
@@ -68,6 +68,11 @@ public class Main extends Application {
 
     @Override
   public void start(Stage primaryStage) {
+    	API_KEY = System.getenv("API_KEY");
+    	if (API_KEY == null || API_KEY.isEmpty()) {
+        	throw new RuntimeException("Error: API is missing in environment variable!");
+        }
+    	
         primaryStage.setTitle("Weather App");
 
         // UI Components

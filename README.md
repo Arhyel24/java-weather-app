@@ -23,6 +23,14 @@ The **JavaFX Weather App** is a simple yet visually appealing application that f
 - **JavaFX SDK** configured in your IDE (Eclipse/IntelliJ IDEA)
 - OpenWeatherMap API Key (Sign up at [OpenWeather](https://openweathermap.org/))
 
+### How to set API_KEY in eclipse
+- Right click on your project
+- Goto Run --> Run configurations
+- Environment Tab --> click Add
+- Enter API_KEY as the variable name
+- Enter the value --> Click okay
+- Click apply and run
+
 ### Steps to Run
 1. Clone the repository:
    ```bash
