@@ -20,7 +20,7 @@ import javafx.scene.text.FontWeight;
 import javafx.geometry.Pos;
 
 public class Main extends Application {
-    private static final String API_KEY = "e953bcf7899d99f7d563c3fd334a023a";
+    private static final String API_KEY = "";
     private static final String API_URL = "https://api.openweathermap.org/data/2.5/weather?q=%s&units=%s&appid=%s";
 
     private Label temperatureLabel, humidityLabel, windSpeedLabel, conditionLabel;
